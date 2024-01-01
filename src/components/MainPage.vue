@@ -1,13 +1,12 @@
 <template>
   <div>
     <HeaderNav />
-    <MainContent />
+    <router-view />
   </div>
 </template>
 
 <script setup>
 import HeaderNav from "./HeaderNav.vue";
-import MainContent from "./MainContent.vue";
 
 </script>
 

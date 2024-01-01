@@ -283,7 +283,7 @@ section{
 /* Schedule */
 .schedule{
   position: relative;
-  margin: 80px 45px 0 45px;
+  margin: 80px auto 0;
   padding: 20px 40px;
   width: 100%;
   overflow: hidden;
@@ -294,19 +294,20 @@ section{
   /* overflow: hidden; */
   list-style: none;
   padding: 0 10px;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
+  /* display: flex; */
+  /* align-items: center; */
+  /* flex-wrap: wrap; */
+  /* gap: 1rem; */
 }
 .scoreBoxItems .schedule-game{
-  width: 23%;
+  /* width: 23%; */
   height: 122px;
   display: flex;
   flex-direction: column;
   background: #fff;
   padding: 7px 24px;
   border-radius: 5px;
+  margin: 10px 0;
 }
 
 .scoreBoxItems .schedule-game a{

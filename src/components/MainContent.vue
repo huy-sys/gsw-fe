@@ -237,7 +237,11 @@
               </div>
               <p class="playerCard-headerPosition">Guard</p>
             </div>
-            <img src="../assets/img/curry.png" alt="" class="playerCard-poster" />
+            <img
+              src="../assets/img/curry.png"
+              alt=""
+              class="playerCard-poster"
+            />
             <div class="playerCard-stats">
               <ul class="playerCard-statsList">
                 <li>
@@ -386,7 +390,11 @@
               </div>
               <p class="playerCard-headerPosition">Guard-Forward</p>
             </div>
-            <img src="../assets/img/igoudala.png" alt="" class="playerCard-poster" />
+            <img
+              src="../assets/img/igoudala.png"
+              alt=""
+              class="playerCard-poster"
+            />
             <div class="playerCard-stats">
               <ul class="playerCard-statsList">
                 <li>
@@ -484,7 +492,11 @@
               </div>
               <p class="playerCard-headerPosition">Guard-Forward</p>
             </div>
-            <img src="../assets/img/damion.png" alt="" class="playerCard-poster" />
+            <img
+              src="../assets/img/damion.png"
+              alt=""
+              class="playerCard-poster"
+            />
             <div class="playerCard-stats">
               <ul class="playerCard-statsList">
                 <li>
@@ -531,7 +543,11 @@
               </div>
               <p class="playerCard-headerPosition">Guard</p>
             </div>
-            <img src="../assets/img/jordan-poole.png" alt="" class="playerCard-poster" />
+            <img
+              src="../assets/img/jordan-poole.png"
+              alt=""
+              class="playerCard-poster"
+            />
             <div class="playerCard-stats">
               <ul class="playerCard-statsList">
                 <li>
@@ -578,7 +594,11 @@
               </div>
               <p class="playerCard-headerPosition">Forward</p>
             </div>
-            <img src="../assets/img/toscano.png" alt="" class="playerCard-poster" />
+            <img
+              src="../assets/img/toscano.png"
+              alt=""
+              class="playerCard-poster"
+            />
             <div class="playerCard-stats">
               <ul class="playerCard-statsList">
                 <li>
@@ -625,7 +645,11 @@
               </div>
               <p class="playerCard-headerPosition">Forward</p>
             </div>
-            <img src="../assets/img/wiggins.png" alt="" class="playerCard-poster" />
+            <img
+              src="../assets/img/wiggins.png"
+              alt=""
+              class="playerCard-poster"
+            />
             <div class="playerCard-stats">
               <ul class="playerCard-statsList">
                 <li>
