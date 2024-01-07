@@ -96,7 +96,7 @@ section{
   margin-bottom: 15px;
 }
 #head-container{
-  position: fixed;
+  position: sticky;
   top: 0;
   right: 0;
   left: 0;
@@ -291,16 +291,16 @@ section{
 
 .scoreBoxItems .schedule-container{
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
   list-style: none;
   padding: 0 10px;
-  /* display: flex; */
-  /* align-items: center; */
-  /* flex-wrap: wrap; */
-  /* gap: 1rem; */
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 .scoreBoxItems .schedule-game{
-  /* width: 23%; */
+  width: 23%;
   height: 122px;
   display: flex;
   flex-direction: column;
