@@ -1,4 +1,6 @@
 <template>
+  <input type="date" v-model="selectedDateRef" />
+  <button @click="handleClick">Chọn ngày</button>
   <div className="game-block" v-for="game in games" :key="game.id">
     <div className="team-score-block">
       <div>
@@ -10,7 +12,7 @@
       </div>
     </div>
     <div className="game-information">
-      <div className="game-date">20-10-2023</div>
+      <div className="game-date">{{ formatDate(game.date) }}</div>
       <div className="game-status">{{ game.status }}</div>
       <div>{{ renderPostSeason(game) }}</div>
       <div>{{ game.time }}</div>
@@ -28,13 +30,31 @@
 </template>
   
 <script setup>
-import { ref } from "vue";
+import { ref  } from "vue"
+import moment from 'moment'
 const games = ref(null);
+const selectedDateRef = ref(null)
+const today = formatDate(new Date())
+console.log('today', today)
 fetch(
-  "https://www.balldontlie.io/api/v1/games?start_date=2023-12-24&end_date=2024-01-07&team_ids[]=10"
+  "https://www.balldontlie.io/api/v1/games?start_date=2023-12-24&end_date=2024-01-07&seasons[]=2023&team_ids[]=10"
 )
   .then((response) => response.json())
-  .then((data1) => (games.value = data1.data));
+  .then((data1) => {
+    games.value = data1.data
+    games.value.sort((a, b) => {
+    return new Date(a.date) - new Date(b.date)
+  })
+  console.log('games', games)
+  })
+  function handleClick() {
+    const selectedDate = new Date(selectedDateRef.value);
+
+      // Sắp xếp list theo ngày đã chọn
+      games.value.sort("date", (a, b) => {
+        return selectedDate - new Date(a.date) - (selectedDate - new Date(b.date));
+      })
+  }
   function renderScore(game, isHome) {
     if (game.period === 0) return null;
     else if (isHome) return game.home_team_score;
@@ -56,6 +76,9 @@ fetch(
         return null;
       return game.visitor_team.name;
     }
+  }
+  function formatDate(date) {
+    return moment(date).format('DD/MM/YYYY')
   }
   function renderLogo(game, isHome) {
     let classes = "team-logo ";
